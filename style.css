@@ -618,7 +618,7 @@
 
 .footer__info{
     background-color: #c8a35f;
-    height: 161px;
+    min-height: 161px;
     display: flex;
     align-items: center;
 }
@@ -685,10 +685,20 @@
 
 
 @media screen and (max-width: 720px){
-    .footer__contacts {
-        display: none;
+    .footer__wrap{
+        flex-direction: column;
+        align-items: flex-start;
     }
+
+    .footer__logo{
+        margin: 10px 0;
+    }
+
+    .footer__contacts{
+        margin-bottom: 15px;
+    }
+    
     .footer__phone{
-        display: none;
+        margin: 0;
     }
 }
